@@ -4,6 +4,7 @@
 #
 class auditd::service {
   service { 'auditd':
-    ensure  => running,
+    ensure   => running,
+    provider => systemd,
   }
 }
